@@ -7,8 +7,8 @@ jobs:
   put_release_label:
     runs-on: ubuntu-latest
     steps:
-      - if: contains (${{ github.head_ref }}, 'release')
+      - if: contains(github.head_ref, 'release')
         run: echo "🎉 Put label event!"
-      - if: contains (${{ github.head_ref }}, 'feature')
+      - if: contains(github.head_ref, 'feature')
         run: echo "No event."
 
