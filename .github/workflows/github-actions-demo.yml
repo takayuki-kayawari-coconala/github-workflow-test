@@ -11,9 +11,4 @@ jobs:
         run: echo "🎉 Put label event!"
       - if: ${{ github.head_ref, 'feature' }}
         run: echo "No event."
-      - run: |
-        echo '2' ${{ github.ref }}
-        echo '3' ${{ github.ref_name }}
-        echo '4' ${{ github.head_ref }}
-        echo '5' ${{ github.base_ref }}
 
