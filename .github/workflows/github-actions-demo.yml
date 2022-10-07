@@ -2,7 +2,7 @@ name: Automated labeling
 run-name: Automated labeling to pull request.
 on:
   pull_request:
-    [opened, reopened]
+    types: [opened, reopened]
 jobs:
   put_release_label:
     runs-on: ubuntu-latest
