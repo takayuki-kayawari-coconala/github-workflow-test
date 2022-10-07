@@ -8,12 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - if: contains(github.head_ref, 'release')
-        run: echo "🎉 Put release label event!"
         uses: andymckay/labeler@master
         with:
           add-labels: "release"
       - if: contains(github.head_ref, 'feature')
-        run: echo "🎉 Put feature label event!"
         uses: andymckay/labeler@master
         with:
           add-labels: "feature"
