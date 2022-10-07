@@ -12,7 +12,6 @@ jobs:
       - if: ${{ github.head_ref, 'feature' }}
         run: echo "No event."
       - run: |
-        echo '1' $GITHUB_REF
         echo '2' ${{ github.ref }}
         echo '3' ${{ github.ref_name }}
         echo '4' ${{ github.head_ref }}
